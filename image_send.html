@@ -1,0 +1,48 @@
+<div class="bubble-image">
+    <div>
+        <div class="image-thumb" style="width: 330px; height: 222px;"><img src="blob:https://web.whatsapp.com/7d18f4db-1f48-403c-bae6-9781ef23b0d2" class="image-thumb-body" style="height: 100%;">
+            <div class="shade"></div>
+        </div>
+        <div class="bubble-image-meta">
+            <div class="_1DZAH _2Pjvv" role="button"><span class="_3EFt_">5:25 PM</span>
+                <div class="status-icon"><span data-icon="msg-dblcheck-light" class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#FFF" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+padding: 3px;
+    z-index: 1;
+    position: relative;
+    max-width: 336px;
+
+
+    .image-thumb {
+        border-radius: 6px;
+        overflow: hidden;
+        cursor: pointer;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .message .shade {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 28px;
+        background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .bubble-image .shade, .bubble-location .shade {
+        left: 0;
+        width: 330px !important;
+        z-index: 1;
+    }

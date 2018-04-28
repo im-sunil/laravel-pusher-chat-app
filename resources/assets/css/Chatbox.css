@@ -1,0 +1,9 @@
+.chat-text-area {
+	margin: 0px;
+	height: 36px; 
+}
+.list-group{
+	overflow-y: scroll;
+
+	height:200px;
+}

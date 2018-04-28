@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  overflow-y: hidden;
+}
+.messages-app {
+  padding: 10px;
+}
+.messages-app .message-display {
+  height: calc(100vh - 20px);
+  width: 100%;
+  float: left;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.messages-app .message-display .message-list {
+  height: calc(100vh - 60px);
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+.messages-app .message-display .message-list .message {
+  width: 100%;
+}
+.messages-app .message-display .message-list .message .msg-content > * {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+.messages-app .message-display .message-list .message time {
+  display: inline-block;
+  padding: 2px;
+}
+.messages-app .message-display .message-list .received-message .msg-content > * {
+  background-color: #00ee00;
+}
+.messages-app .message-display .message-list .sent-message {
+  float: right;
+  text-align: right;
+}
+.messages-app .message-display .message-list .sent-message .msg-content > * {
+  background-color: #33acfe;
+  text-align: left;
+}
+.messages-app .message-display .composition-area {
+  height: 40px;
+  padding: 5px;
+}
+.messages-app .message-display .composition-area textarea {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  outline: none;
+  resize: none;
+}
+.messages-app .contact-list {
+  display: none;
+}
+.messages-app .contact-list > ul {
+  list-style: none;
+}
+.messages-app .diagnostics {
+  clear: both;
+  font-size: .8em;
+  float: left;
+  margin: 5px 0 0 0;
+  padding: 0;
+}

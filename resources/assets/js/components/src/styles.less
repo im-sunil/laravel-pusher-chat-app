@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height:100%;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.messages-app {
+  @messages-app-padding: 10px;
+  padding: @messages-app-padding;
+
+  .message-display {
+    @composition-area-height: 40px;
+    @border-styling: 1px solid #ddd;
+
+    height: calc(~"100vh" - (2 * @messages-app-padding));
+    width: 100%;
+    float: left;
+
+    border: @border-styling;
+    border-radius: 4px;
+
+    .message-list {
+      height: calc(~"100vh" - ((2 * @messages-app-padding) + @composition-area-height));
+
+      border-bottom: @border-styling;
+      padding: 10px;
+
+      .message {
+        width: 100%;
+
+        .msg-content {
+
+          > * {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+          }
+        }
+
+        time {
+          display: inline-block;
+          padding: 2px;
+        }
+      }
+
+      .received-message {
+        .msg-content > * {
+          background-color: #00ee00;
+        }
+      }
+
+      .sent-message {
+        float: right;
+        text-align: right;
+
+        .msg-content > * {
+          background-color: #33acfe;
+          text-align: left;
+        }
+      }
+    }
+
+    .composition-area {
+      height: @composition-area-height;
+      padding: 5px;
+
+      textarea {
+        height: 100%;
+        width: 100%;
+        border: 0;
+        outline: none;
+        resize: none;
+      }
+    }
+  }
+
+  .contact-list {
+    display: none;
+    > ul {
+      list-style: none;
+    }
+
+    .contact {
+
+    }
+  }
+
+  .diagnostics {
+    clear: both;
+    font-size: .8em;
+    float: left;
+    margin: 5px 0 0 0;
+    padding: 0;
+  }
+}
